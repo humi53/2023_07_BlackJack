@@ -1,4 +1,5 @@
 # 구조적 변화와 기능적 추가를 고려함.
+
 ## 구조적 변화
 	- inputService 구조변화 (결정)
 		- interface를 제거하고 독자적으로 사용하며 
@@ -24,6 +25,6 @@
 	- 승패 횟수와 블랙잭 횟수 확인 기능. (고려중 : 긍정적)
 
 # Step
-## Step 1. inputService 구조변화	<< 
-## Step 2. Config 파일 
-## Step 3. View 구조 변화
+	- Step 1. inputService 구조변화	<< 
+    - Step 2. Config 파일 
+    - Step 3. View 구조 변화
