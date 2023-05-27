@@ -2,9 +2,9 @@
 - 구조적 변화와 기능적 추가를 고려함.
 
 ## 구조적 변화
-- inputService 구조변화 ( **결정** )
+- <span style="color:gray">**inputService 구조변화  (결정) 
 	- interface를 제거하고 독자적으로 사용하며 
-	- if 문을 사용하여 구분하던 구조를 독자적 메소드로 분리하여 사용.
+	- if 문을 사용하여 구분하던 구조를 독자적 메소드로 분리하여 사용.**</span>
 - 게임결과 구조 (고려중)
 	- WINNERDEALER, PLAYERBLACKJACK, WINNERPLAERY, GAMEPUSH
 		- 위의 상태들을 모아서 하나의 메소드 안에서 if문으로 분리하여 처리하는것이 옳은가
@@ -14,9 +14,9 @@
 		- 효과 : 처리, 즉 기능적인 클래스들을 service 패키지로 묶어서 모아놓는것이 
 		- ViewService도 화면을 표현해주는 `기능` 적인 것이다.
 - Config 파일
-	- 명명 규칙변경 ( **결정** )
+	- 명명 규칙변경  **(결정)** 
 		- 현 상태 : 명명 규칙이 주먹구구 상태라 작성자 외의 인원이 파악하기 힘들다.
-	- GameState ( **결정** )
+	- GameState  **(결정)** 
 		- 현 상태 : 쓰이지 않는것이 많고, 명칭의 직관성이 떨어짐
 		- 조치 : 쓰이지 않는것은 제거하고, 명칭의 일관성을 맞추어 변경.
 - Suit 구조 (고려중)
@@ -30,3 +30,17 @@
 - **Step 1. inputService 구조변화** 
 - Step 2. Config 파일 
 - Step 3. View 구조 변화
+
+
+
+## 특이점 log 기록
+### Step 1. 특이상태
+- GameState.GAMEREADY 상태
+	- 카드를 나눠주기전 대기상태를 표현 했었으나
+	- Betting이라는 기능이 들어감으로써 대처가 되어서 필요가 없어짐.
+	- GameState.GAMEREADY 상태를 제거하기로 함.
+
+	- 의문
+		- interface를 상속받아 유지하는게 옳은가? : 아니면 독자적으로 구성되어 메소드를 생성할때 자유를 선사하는게 좋은가?
+		- 생각 : inputService는 Service의 종속적인 관계이며 단순히 메소드를 따로 구별해놓은 관계이기 때문에 interface를 구현하지 않아도 무관해 보인다.
+				프로그램 작성에도 Service 클래스와 InputService 클래스는 한사람의 업무로 보는것이 마땅하다.
