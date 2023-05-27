@@ -1,12 +1,13 @@
 # 2023-05-27 Renewal_plan.md
 - 구조적 변화와 기능적 추가를 고려함.
+	- 구조적 변화와 기능적 추가에 불구하고 이전 버전들은 실행되어야 한다.
 
 ## 구조적 변화
-```
-- inputService 구조변화  **(결정)** 
+- 완료
+- inputService 구조변화  (완료) 
 	- interface를 제거하고 독자적으로 사용하며 
 	- if 문을 사용하여 구분하던 구조를 독자적 메소드로 분리하여 사용.
-```
+---
 - 게임결과 구조 (고려중)
 	- WINNERDEALER, PLAYERBLACKJACK, WINNERPLAERY, GAMEPUSH
 		- 위의 상태들을 모아서 하나의 메소드 안에서 if문으로 분리하여 처리하는것이 옳은가
