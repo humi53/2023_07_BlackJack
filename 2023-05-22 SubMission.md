@@ -1,6 +1,6 @@
 # 2023-05-22 SubMission.md
 ## SubMission
--앞으로 변경할만한 사항들.
+- 앞으로 변경할만한 사항들.
 ## input Service 구조변경.
 - interface를 사용하는것이 올바른가?
 	- 마땅하지 않다고 생각이 흐른다.
