@@ -1,5 +1,9 @@
 package com.ny.aenean.cardconfig;
 
+/*
+ * Old version
+ * V4 이전 버전에서 동작.
+ */
 public class CardConfig {
 	public class ViewColor{
 		public static final String YELLOW = "\u001B[33m";

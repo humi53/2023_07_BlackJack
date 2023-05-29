@@ -1,5 +1,9 @@
 package com.ny.aenean.cardconfig;
 
+/*
+ * Old version
+ * V4 이전 버전에서 동작.
+ */
 public class InputConfig {
 	public class HitStay{
 		public static final int HIT = 0;

@@ -1,8 +1,9 @@
 package com.ny.aenean.service.impl;
 
-import com.ny.aenean.cardconfig.InputConfig.GameState;
-import com.ny.aenean.cardconfig.InputConfig.HitStay;
-import com.ny.aenean.cardconfig.InputConfig.IsBust;
+
+import com.ny.aenean.config.Config.StateConfig.GameState;
+import com.ny.aenean.config.Config.StateConfig.HitStay;
+import com.ny.aenean.config.Config.StateConfig.IsBust;
 import com.ny.aenean.models.BlackJackDto;
 import com.ny.aenean.models.DealerDto;
 import com.ny.aenean.models.DeckDto;
