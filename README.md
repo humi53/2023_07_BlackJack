@@ -68,3 +68,22 @@
         - 딜러는 가진카드합이 17점 이상이면 카드추가 불가.
             - 딜러는 합이 17미만까지 카드를 무조건 받아야 함.
         - 플레이어가 블랙잭이면 딜러의 카드를 확인하고 게임종료.
+```
+{
+    "font_size": 15,
+    "ignored_packages":
+    [
+        "Vintage",
+    ],
+}
+
+{
+    "line_numbers": false,
+    "gutter": false,
+    "draw_centered": true,
+    "wrap_width": 80,
+    "word_wrap": true,
+    "scroll_past_end": true
+}
+
+```
